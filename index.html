@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+ <title>Quiz App</title>
+</head>
+<body>
+ <div class="front_page">
+  <div class="wellcome_area text-center mt-32">
+   <h1 class="font-extrabold font-serif text-5xl text-green-500">Wellcome to <span>Quiz Game</span></h1>
+   <h2 class="font-sans text-3xl font-bold pt-4">Coding Quiz Challenge</h2>
+   <br><br>
+   <p class="pt-4 ">Try to Answer the following code-related Questions within the Time Limit.</p>
+   <p class="pt-2"><span class="font-bold">Time:</span> 30sec &nbsp;&nbsp;&nbsp;<span class="font-bold">Total Marks:</span> 100 &nbsp;&nbsp;&nbsp;<span class="font-bold">Total Questions:</span> 10</p>
+  </div>
+  <div class="start_button text-center pt-10">
+   <button class="start_quiz_button bg-green-500 text-white p-4 rounded-md text-center text-xl hover:bg-green-800 hover:duration-1000" >Start Quiz</button>
+  </div>
+ </div>
+
+
+ <div class="Questions_page shadow-sm w-[35%] h-auto mb-4 shadow-black p-3 rounded-sm ml-[35%] mt-32 hidden">
+  <div class="time_rem_questions flex justify-between border-b-2 p-2">
+   <p class="rem_questions pointer-events-none" ><span class="remaining_question_counter">1</span> of 10 Questions</p>
+   <div class="rem_time bg-blue-500 text-white rounded-lg w-14 text-center pointer-events-none">
+    30
+   </div>
+  </div>
+  <div class="questions pt-2">
+   <h1 class="question_heading font-bold pointer-events-none" value="question_statement"></h1>
+   <div class="option border  my-2 p-1 pl-2 rounded-sm cursor-pointer" value="a"></div>
+   <div class="option border my-2 p-1 pl-2 rounded-sm cursor-pointer" value="b"></div>
+   <div class="option border my-2 p-1 pl-2 rounded-sm cursor-pointer" value="c"></div>
+   <div class="option border my-2 p-1 pl-2 rounded-sm cursor-pointer" value="d"></div>
+  </div>
+  <div class="button flex justify-end">
+   <button class="next_button bg-blue-500 rounded-lg w-20 p-2 text-white text-center ">Next</button>
+  </div>
+ </div>
+
+ <div class="result_page text-center mt-32 bg-green-400 rounded-md w-[40%] p-5 ml-[32%] hidden">
+  <h1 class="font-extrabold text-5xl">ALL DONE!</h1>
+  <h2 class="congratulaion_message text-4xl text-white mt-6 ">PASS Congratulations!</h2>
+  <h2 class="fail_message text-4xl text-red-500 mt-6 ">Fail!</h2>
+  <p class="mt-5">Your Final Score is: <span class="final_score">1</span> </p>
+ </div>
+ <script src="fun.js"></script>
+</body>
+</html>
